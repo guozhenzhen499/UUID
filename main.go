@@ -76,7 +76,7 @@ func (sf *SnowFlake) waitNextMilli(ts uint64) uint64 {
 func main() {
 	sn,err:=New(1)
 	if err!=nil {
-		log.Fatal("sn初始化出错")
+		log.Fatal("雪花算法初始化出错")
 		return
 	}
 	uuid,err:=sn.Generate()
